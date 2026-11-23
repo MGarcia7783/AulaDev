@@ -20,8 +20,8 @@
     <!-- Menú: plegable en móvil y tableta, siempre visible desde lg -->
     <div
       id="menu-principal"
-      class="basis-full pt-4 lg:flex lg:basis-auto lg:items-center lg:gap-4 lg:pt-0"
-      [hidden]="!menuOpen()"
+      class="basis-full pt-4 lg:basis-auto lg:items-center lg:gap-4 lg:pt-0"
+      [class]="menuOpen() ? 'block lg:flex' : 'hidden lg:flex'"
     >
       <nav aria-label="Principal">
         <ul class="flex flex-col gap-1 lg:flex-row lg:items-center">
