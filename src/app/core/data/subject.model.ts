@@ -18,7 +18,7 @@ export interface Subject {
   name: string;
   /** Nombre del curso o nivel, cuando corresponda. */
   course?: string;
-  description: string;
+  description?: string;
   icon: SubjectIcon;
   accent: SubjectAccent;
 }
