@@ -1,1 +1,15 @@
-<h1 class="text-3xl font-bold underline">Hola AulaDev</h1>
+<a
+  href="#contenido"
+  class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-brand-strong focus:px-4 focus:py-2 focus:text-white"
+  (click)="skipToContent($event, main)"
+>
+  Saltar al contenido
+</a>
+
+<app-header />
+
+<main id="contenido" #main tabindex="-1" class="flex-1 focus:outline-none">
+  <router-outlet />
+</main>
+
+<app-footer />

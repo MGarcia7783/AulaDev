@@ -1,2 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
 @import 'tailwindcss';
+
+/*
+ * Tema de AulaDev.
+ * Tailwind genera las clases a partir de estas variables:
+ *   --color-navy       -> bg-navy, text-navy, border-navy ...
+ *   --font-sans        -> font-sans
+ */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+
+  /* Azules de marca */
+  --color-navy: #071f4a;
+  --color-navy-soft: #0a2a5c;
+  --color-ink: #0b2a5b;
+  --color-brand: #1e8bff;
+  --color-brand-strong: #1a73e8;
+
+  /* Fondos claros */
+  --color-surface: #f4f7fd;
+  --color-surface-strong: #e6eefb;
+  --color-line: #dbe5f5;
+
+  /* Texto secundario */
+  --color-muted: #51618a;
+
+  /* Colores de acento de las tarjetas de materias */
+  --color-accent-blue: #1f6bff;
+  --color-accent-green: #18a957;
+  --color-accent-purple: #6d4cf0;
+  --color-accent-orange: #f59e0b;
+  --color-accent-teal: #0a93b8;
+  --color-accent-pink: #e5336b;
+
+  --shadow-card: 0 2px 10px rgb(11 42 91 / 0.08);
+  --shadow-card-hover: 0 8px 24px rgb(11 42 91 / 0.14);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Foco visible y consistente para navegación por teclado */
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
