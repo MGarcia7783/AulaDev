@@ -1,59 +1,98 @@
 # AulaDev
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.3.0.
+### Aprende. Practica. Desarrolla.
 
-## Development server
+**AulaDev** es un portal académico orientado al aprendizaje de programación y desarrollo de software. Su propósito es proporcionar a los estudiantes un espacio centralizado donde puedan consultar documentación, contenidos teóricos, ejemplos de código, ejercicios prácticos y proyectos relacionados con las diferentes asignaturas de programación.
 
-To start a local development server, run:
+El proyecto busca facilitar el acceso al material educativo mediante una plataforma moderna, organizada, intuitiva y accesible desde diferentes dispositivos.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🎯 Objetivo
 
-## Code scaffolding
+Construir un espacio de aprendizaje digital que permita organizar y compartir recursos académicos, facilitando el estudio autónomo y el fortalecimiento de las habilidades de programación de los estudiantes.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📚 Asignaturas
 
-```bash
-ng generate component component-name
-```
+AulaDev contempla inicialmente las siguientes asignaturas:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+| N.º | Asignatura |
+|---|---|
+| 1 | Introducción a la Programación |
+| 2 | Programación Estructurada (Desarrollo de Aplicaciones I) |
+| 3 | Estructura de Datos (Desarrollo de Aplicaciones II) |
+| 4 | Base de Datos |
+| 5 | Administración de Bases de Datos |
+| 6 | Programación Orientada a Objetos (Desarrollo de Aplicaciones III) |
+| 7 | Backend - Desarrollo de API RESTful (Desarrollo de Aplicaciones IV) |
+| 8 | Desarrollo de Aplicaciones Móviles (Desarrollo de Aplicaciones V) |
+| 9 | Full Stack (Optativa Profesional I) |
 
-```bash
-ng generate --help
-```
+## 📖 Contenido académico
 
-## Building
+Cada asignatura contará con un espacio independiente para organizar sus materiales:
 
-To build the project run:
+- **Contenido teórico:** conceptos y explicaciones de los temas.
+- **Ejemplos de código:** demostraciones prácticas y explicadas.
+- **Ejercicios:** actividades para reforzar el aprendizaje.
+- **Proyectos:** propuestas de desarrollo para aplicar los conocimientos.
+- **Material complementario:** recursos adicionales relacionados con la asignatura.
 
-```bash
-ng build
-```
+## 🛠️ Tecnologías
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+El proyecto utilizará las siguientes tecnologías:
 
-## Running unit tests
+- **Angular:** framework para el desarrollo de la interfaz web.
+- **TypeScript:** lenguaje principal de desarrollo.
+- **HTML5:** estructura de las páginas.
+- **CSS:** diseño y presentación visual.
+- **Angular Router:** navegación entre las diferentes secciones.
+- **Markdown:** organización futura del contenido académico.
+- **Git y GitHub:** control de versiones y alojamiento del repositorio.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Las tecnologías de programación utilizadas en las asignaturas podrán incluir SQL Server, PostgreSQL, .NET/C#, NestJS, Angular, Java, PSeInt, Firebase y Flutter.
 
-```bash
-ng test
-```
+## 🏗️ Arquitectura inicial
 
-## Running end-to-end tests
+AulaDev comenzará como una aplicación frontend estática desarrollada con Angular.
 
-For end-to-end (e2e) testing, run:
+En esta primera etapa:
 
-```bash
-ng e2e
-```
+- No requiere backend.
+- No requiere base de datos.
+- No requiere autenticación.
+- No requiere registro de usuarios.
+- No requiere panel administrativo.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+La estructura estará preparada para incorporar progresivamente contenido académico y nuevas funcionalidades sin tener que reconstruir el proyecto desde cero.
 
-## Additional Resources
+## 🚀 Características previstas
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Página principal con presentación de AulaDev.
+- Catálogo de asignaturas.
+- Página independiente para cada asignatura.
+- Sección de recursos generales.
+- Navegación intuitiva.
+- Diseño adaptable a computadoras, tabletas y dispositivos móviles.
+- Organización del contenido mediante Markdown.
+- Buscador de contenidos.
+
+## 🌐 Despliegue
+
+Se contempla utilizar un servicio de alojamiento gratuito para sitios estáticos, como GitHub Pages o Cloudflare Pages.
+
+El objetivo es mantener AulaDev disponible públicamente, procurando minimizar los costos de alojamiento y facilitar su mantenimiento a largo plazo.
+
+## 📌 Estado del proyecto
+
+**En desarrollo - Primera etapa.**
+
+Actualmente, el objetivo es construir la estructura visual, navegación y páginas principales del portal, sin incorporar todavía el contenido académico.
+
+## 👨‍💻 Autor
+
+Proyecto académico desarrollado para apoyar los procesos de enseñanza y aprendizaje en el área de programación y desarrollo de software.
+
+---
+
+**AulaDev — Aprende. Practica. Desarrolla.**
