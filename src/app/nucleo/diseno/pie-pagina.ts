@@ -18,7 +18,7 @@ interface EnlaceSocial {
   template: `
     <footer class="bg-marino text-white">
       <div
-        class="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-6 sm:px-6 lg:flex-row lg:items-center lg:justify-between"
+        class="mx-auto flex max-w-contenido flex-col gap-6 px-4 py-6 sm:px-6 lg:flex-row lg:items-center lg:justify-between"
       >
         <!-- Logo con eslogan (visible desde pantallas medianas) -->
         <app-logo [esloganDesde]="'md'" />

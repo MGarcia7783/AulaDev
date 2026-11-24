@@ -8,7 +8,7 @@ import { Proximamente } from '../../compartido/ui/proximamente';
   imports: [EncabezadoPagina, Proximamente],
   template: `
     <app-encabezado-pagina titulo="Acerca de" subtitulo="Aprende. Practica. Desarrolla." />
-    <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+    <section class="mx-auto max-w-contenido px-4 py-10 sm:px-6">
       <app-proximamente />
     </section>
   `,

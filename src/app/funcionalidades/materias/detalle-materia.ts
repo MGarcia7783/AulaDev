@@ -16,7 +16,7 @@ import { Proximamente } from '../../compartido/ui/proximamente';
     @if (materia(); as datos) {
       <!-- Materia encontrada -->
       <app-encabezado-pagina [titulo]="datos.nombre" [subtitulo]="datos.curso" />
-      <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+      <section class="mx-auto max-w-contenido px-4 py-10 sm:px-6">
         <a routerLink="/materias" class="text-sm font-semibold text-marca-fuerte hover:underline">
           ← Todas las materias
         </a>
@@ -28,7 +28,7 @@ import { Proximamente } from '../../compartido/ui/proximamente';
     } @else {
       <!-- El slug de la dirección no corresponde a ninguna materia -->
       <app-encabezado-pagina titulo="Materia no encontrada" />
-      <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+      <section class="mx-auto max-w-contenido px-4 py-10 sm:px-6">
         <a routerLink="/materias" class="font-semibold text-marca-fuerte hover:underline">
           Ver todas las materias
         </a>

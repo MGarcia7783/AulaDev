@@ -11,7 +11,7 @@ import { EncabezadoPagina } from '../../compartido/ui/encabezado-pagina';
       titulo="Página no encontrada"
       subtitulo="La dirección no existe o fue movida."
     />
-    <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+    <section class="mx-auto max-w-contenido px-4 py-10 sm:px-6">
       <a routerLink="/" class="font-semibold text-marca-fuerte hover:underline">Volver al inicio</a>
     </section>
   `,
