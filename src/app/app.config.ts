@@ -6,7 +6,7 @@ import {
   withInMemoryScrolling,
 } from '@angular/router';
 import { routes } from './app.routes';
-import { EstrategiaTitulo } from './nucleo/estrategia-titulo';
+import { AppTitleStrategy } from './core/title-strategy';
 
 /** Configuración global de la aplicación. */
 export const appConfig: ApplicationConfig = {
@@ -21,6 +21,6 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling({ scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' }),
     ),
     // Título de pestaña personalizado: "<página> · AulaDev"
-    { provide: TitleStrategy, useClass: EstrategiaTitulo },
+    { provide: TitleStrategy, useClass: AppTitleStrategy },
   ],
 };

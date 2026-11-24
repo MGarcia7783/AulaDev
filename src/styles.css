@@ -5,10 +5,10 @@
 /*
  * Tema de AulaDev.
  * Tailwind genera las clases a partir de estas variables. Por ejemplo:
- *   --color-marino   ->  bg-marino, text-marino, border-marino ...
- *   --shadow-tarjeta ->  shadow-tarjeta
- * Los prefijos (--color-, --font-, --shadow-) los exige Tailwind y no se traducen;
- * lo que sigue al prefijo es el nombre propio de AulaDev, en español.
+ *   --color-navy   ->  bg-navy, text-navy, border-navy ...
+ *   --shadow-card ->  shadow-card
+ * Los prefijos (--color-, --font-, --shadow-) los exige Tailwind;
+ * los nombres del tema siguen la convención del proyecto en inglés.
  */
 @theme {
   /* Tipografía principal del sitio */
@@ -17,37 +17,37 @@
     Arial, sans-serif;
 
   /* Tipografía manuscrita para la frase destacada (usa la fuente cursiva disponible) */
-  --font-manuscrita: 'Segoe Script', 'Bradley Hand', 'Brush Script MT', 'Comic Sans MS', cursive;
+  --font-handwriting: 'Segoe Script', 'Bradley Hand', 'Brush Script MT', 'Comic Sans MS', cursive;
 
-  /* Ancho máximo del contenido (equivale a max-w-contenido); casi todo el ancho en pantallas grandes */
-  --container-contenido: 88rem;
+  /* Ancho máximo del contenido (equivale a max-w-content); casi todo el ancho en pantallas grandes */
+  --container-content: 88rem;
 
   /* Azules de marca */
-  --color-marino: #071f4a;
-  --color-marino-suave: #0a2a5c;
-  --color-tinta: #0b2a5b; /* color del texto principal */
-  --color-marca: #1e8bff; /* azul tecnológico */
-  --color-marca-fuerte: #1a73e8;
+  --color-navy: #071f4a;
+  --color-navy-soft: #0a2a5c;
+  --color-ink: #0b2a5b; /* color del texto principal */
+  --color-brand: #1e8bff; /* azul tecnológico */
+  --color-brand-strong: #1a73e8;
 
   /* Fondos claros */
-  --color-superficie: #f4f7fd;
-  --color-superficie-fuerte: #e6eefb;
-  --color-linea: #dbe5f5; /* bordes y separadores */
+  --color-surface: #f4f7fd;
+  --color-surface-strong: #e6eefb;
+  --color-line: #dbe5f5; /* bordes y separadores */
 
   /* Texto secundario */
-  --color-tenue: #51618a;
+  --color-muted: #51618a;
 
   /* Colores de acento de las tarjetas de materias */
-  --color-acento-azul: #1f6bff;
-  --color-acento-verde: #18a957;
-  --color-acento-morado: #6d4cf0;
-  --color-acento-naranja: #f59e0b;
-  --color-acento-turquesa: #0a93b8;
-  --color-acento-rosa: #e5336b;
+  --color-accent-blue: #1f6bff;
+  --color-accent-green: #18a957;
+  --color-accent-purple: #6d4cf0;
+  --color-accent-orange: #f59e0b;
+  --color-accent-turquoise: #0a93b8;
+  --color-accent-pink: #e5336b;
 
   /* Sombras discretas de las tarjetas */
-  --shadow-tarjeta: 0 2px 10px rgb(11 42 91 / 0.08);
-  --shadow-tarjeta-hover: 0 8px 24px rgb(11 42 91 / 0.14);
+  --shadow-card: 0 2px 10px rgb(11 42 91 / 0.08);
+  --shadow-card-hover: 0 8px 24px rgb(11 42 91 / 0.14);
 }
 
 /* Estilos base: se aplican a toda la página */
@@ -57,15 +57,15 @@
   }
 
   body {
-    background-color: var(--color-superficie);
-    color: var(--color-tinta);
+    background-color: var(--color-surface);
+    color: var(--color-ink);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
 
   /* Foco visible y consistente para la navegación con teclado */
   :focus-visible {
-    outline: 2px solid var(--color-marca);
+    outline: 2px solid var(--color-brand);
     outline-offset: 2px;
   }
 }
@@ -76,8 +76,8 @@
    * Fondo de la portada: azul marino con resplandor azul en la parte inferior
    * y un destello suave arriba a la derecha, como en el diseño de referencia.
    */
-  .fondo-portada {
-    background-color: var(--color-marino);
+  .hero-background {
+    background-color: var(--color-navy);
     background-image:
       radial-gradient(ellipse 60% 80% at 68% 100%, rgb(30 139 255 / 0.45), transparent 70%),
       radial-gradient(ellipse 40% 60% at 95% 10%, rgb(30 139 255 / 0.18), transparent 70%),

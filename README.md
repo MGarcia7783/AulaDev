@@ -19,14 +19,14 @@ AulaDev contempla inicialmente las siguientes asignaturas:
 | N.º | Asignatura |
 |---|---|
 | 1 | Introducción a la Programación |
-| 2 | Programación Estructurada (Desarrollo de Aplicaciones I) |
-| 3 | Estructura de Datos (Desarrollo de Aplicaciones II) |
+| 2 | Programación Estructurada |
+| 3 | Estructura de Datos |
 | 4 | Base de Datos |
 | 5 | Administración de Bases de Datos |
-| 6 | Programación Orientada a Objetos (Desarrollo de Aplicaciones III) |
-| 7 | Backend - Desarrollo de API RESTful (Desarrollo de Aplicaciones IV) |
-| 8 | Desarrollo de Aplicaciones Móviles (Desarrollo de Aplicaciones V) |
-| 9 | Full Stack (Optativa Profesional I) |
+| 6 | Programación Orientada a Objetos |
+| 7 | Backend - API RESTful |
+| 8 | Desarrollo de Aplicaciones Móviles |
+| 9 | Full Stack |
 
 ## 📖 Contenido académico
 
@@ -47,6 +47,7 @@ El proyecto utilizará las siguientes tecnologías:
 - **HTML5:** estructura de las páginas.
 - **CSS:** diseño y presentación visual.
 - **Angular Router:** navegación entre las diferentes secciones.
+- **Tailwind CSS:** estilos y diseño adaptable.
 - **Markdown:** organización futura del contenido académico.
 - **Git y GitHub:** control de versiones y alojamiento del repositorio.
 
@@ -66,6 +67,23 @@ En esta primera etapa:
 
 La estructura estará preparada para incorporar progresivamente contenido académico y nuevas funcionalidades sin tener que reconstruir el proyecto desde cero.
 
+### Organización del código y contenido
+
+- `src/app/core`: estructura común y configuración global de la interfaz.
+- `src/app/shared`: componentes visuales de uso general.
+- `src/app/features`: páginas y componentes agrupados por funcionalidad.
+- `src/app/features/subjects/data/subjects.data.ts`: catálogo ordenado e índice de las materias.
+- `public/content/subjects`: futuros materiales por materia, unidad y tema.
+- `public/content/resources`: futuros materiales comunes a varias materias.
+
+El catálogo permite registrar unidades y temas con título, identificador y ruta del Markdown.
+Por ejemplo, un tema de la primera unidad de Introducción a la Programación podría guardarse en
+`public/content/subjects/introduction-to-programming/unit-01/introduction.md`, con la ruta
+`content/subjects/introduction-to-programming/unit-01/introduction.md` en el índice.
+Los archivos de recursos generales se mantienen separados de los específicos de cada materia.
+Actualmente las unidades están vacías y **todavía no se ha implementado el cargador ni el visor
+Markdown**; esas funciones y su dependencia se evaluarán en una etapa posterior.
+
 ## 🚀 Características previstas
 
 - Página principal con presentación de AulaDev.
@@ -82,6 +100,13 @@ La estructura estará preparada para incorporar progresivamente contenido acadé
 Se contempla utilizar un servicio de alojamiento gratuito para sitios estáticos, como GitHub Pages o Cloudflare Pages.
 
 El objetivo es mantener AulaDev disponible públicamente, procurando minimizar los costos de alojamiento y facilitar su mantenimiento a largo plazo.
+
+Las rutas actuales usan `/subjects`, `/resources` y `/about`; las direcciones anteriores en
+español redirigen desde la aplicación. Para abrirlas directamente o recargarlas, el alojamiento
+debe servir la aplicación en las rutas de Angular. Esta configuración depende del proveedor:
+GitHub Pages no ofrece una regla de fallback general como otros servicios. Además, si se publica
+en un subdirectorio hay que ajustar la base de compilación y verificar las rutas de los recursos.
+El despliegue y su fallback deben comprobarse en el proveedor elegido.
 
 ## 📌 Estado del proyecto
 

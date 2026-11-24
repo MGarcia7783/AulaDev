@@ -19,9 +19,9 @@ describe('App', () => {
   it('debería mostrar el encabezado, el contenido principal y el pie de página', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
-    const compilado = fixture.nativeElement as HTMLElement;
-    expect(compilado.querySelector('app-encabezado')).toBeTruthy();
-    expect(compilado.querySelector('main')).toBeTruthy();
-    expect(compilado.querySelector('app-pie-pagina')).toBeTruthy();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('app-header')).toBeTruthy();
+    expect(compiled.querySelector('main')).toBeTruthy();
+    expect(compiled.querySelector('app-footer')).toBeTruthy();
   });
 });
