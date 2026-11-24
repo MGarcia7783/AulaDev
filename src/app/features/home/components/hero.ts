@@ -1,31 +1,17 @@
 import { Component } from '@angular/core';
-import { LaptopIllustration } from './laptop-illustration';
 
 /**
- * Portada (hero) de la página principal: mensaje de bienvenida a la izquierda y,
- * a la derecha, una laptop con código en pantalla.
- * Por indicación del diseño, NO incluye el botón «Explorar Materias».
+ * Portada de bienvenida de la página principal.
  */
 @Component({
   selector: 'app-hero',
-  imports: [LaptopIllustration],
   template: `
     <section class="hero-background relative overflow-hidden text-white" aria-labelledby="titulo-bienvenida">
-      <!-- Línea curva decorativa en la parte inferior -->
-      <svg
-        class="pointer-events-none absolute -bottom-2 left-0 h-24 w-full opacity-70"
-        viewBox="0 0 1440 96"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
-        <path d="M0 70C220 20 420 96 720 80S1180 30 1440 62" fill="none" stroke="#1e8bff" stroke-width="2" />
-      </svg>
-
       <div
-        class="relative mx-auto grid max-w-content items-center gap-6 px-4 py-10 sm:px-6 lg:min-h-80 lg:grid-cols-[1.05fr_1fr] lg:gap-0 lg:py-8"
+        class="relative mx-auto flex max-w-content items-center px-4 py-10 sm:px-6 lg:min-h-80"
       >
         <!-- Mensaje de bienvenida -->
-        <div>
+        <div class="max-w-2xl">
           <h1
             id="titulo-bienvenida"
             class="text-4xl leading-tight font-extrabold tracking-tight sm:text-5xl xl:text-6xl"
@@ -43,9 +29,6 @@ import { LaptopIllustration } from './laptop-illustration';
           </p>
         </div>
 
-        <div class="flex items-center justify-center lg:h-full">
-          <app-laptop-illustration class="w-full max-w-md lg:max-w-lg" />
-        </div>
       </div>
     </section>
   `,

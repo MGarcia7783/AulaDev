@@ -35,7 +35,7 @@ type FromWidth = 'md' | 'xl';
 
     @if (sloganFrom()) {
       <!-- Línea vertical y eslogan: ocultos por defecto, visibles desde el ancho indicado -->
-      <span class="hidden h-10 w-px bg-white/40" [class]="dividerClass()" aria-hidden="true"></span>
+      <span class="hidden h-10 w-px bg-white/40" [class]="sloganClass()" aria-hidden="true"></span>
       <span class="hidden text-base text-white/90 italic" [class]="sloganClass()">
         Aprende. Practica. Desarrolla.
       </span>
@@ -47,9 +47,6 @@ export class Logo {
   readonly sloganFrom = input<FromWidth | null>(null);
 
   // Las clases se escriben completas ('xl:block', 'md:block') para que Tailwind las detecte.
-  protected readonly dividerClass = computed(() =>
-    this.sloganFrom() === 'xl' ? 'xl:block' : 'md:block',
-  );
   protected readonly sloganClass = computed(() =>
     this.sloganFrom() === 'xl' ? 'xl:block' : 'md:block',
   );

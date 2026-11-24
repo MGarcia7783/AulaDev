@@ -36,18 +36,6 @@ const ICONS = {
     'M6 12.5V16a6 3 0 0 0 12 0v-3.5',
   ],
 
-  // Franja de beneficios
-  laptop: [
-    'M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16',
-  ],
-  'trending-up': [
-    'M4 21v-5h4v5',
-    'M10 21V12h4v9',
-    'M16 21V9h4v12',
-    'M4 11l5-4 4 3 7-6',
-    'M16 4h4v4',
-  ],
-
   // Iconos de las tarjetas de materias
   code: ['m18 16 4-4-4-4', 'm6 8-4 4 4 4', 'm14.5 4-5 16'],
   structure: [
