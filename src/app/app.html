@@ -1,15 +1,17 @@
+<!-- Enlace oculto que aparece al usar el teclado: permite saltar el menú e ir al contenido -->
 <a
   href="#contenido"
-  class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-brand-strong focus:px-4 focus:py-2 focus:text-white"
-  (click)="skipToContent($event, main)"
+  class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-marca-fuerte focus:px-4 focus:py-2 focus:text-white"
+  (click)="saltarAlContenido($event, principal)"
 >
   Saltar al contenido
 </a>
 
-<app-header />
+<app-encabezado />
 
-<main id="contenido" #main tabindex="-1" class="flex-1 focus:outline-none">
+<!-- Aquí se muestra la página que corresponde a la ruta actual -->
+<main id="contenido" #principal tabindex="-1" class="flex-1 focus:outline-none">
   <router-outlet />
 </main>
 
-<app-footer />
+<app-pie-pagina />
